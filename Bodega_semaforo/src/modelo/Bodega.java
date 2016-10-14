@@ -45,7 +45,7 @@ cantidadT1Guardados.release(1);
 	cantidadtipoDos++;
 	mutex.release();
 	cantidadT2Guardados.release(1);
-	darEstadoActual();
+	estadoBodega();
 
 		}
 	}
@@ -59,12 +59,11 @@ cantidadT1Guardados.release(1);
 	capacidadBodega += 90;
 	mutex.release();
 	volumenDisponible.release(90);
-
-	darEstadoActual();
+	estadoBodega();
 
 	}
 
-	private void darEstadoActual() {
+	private void estadoBodega() {
 
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println("La Bodega Tiene:");
